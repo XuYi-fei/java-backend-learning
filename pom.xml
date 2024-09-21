@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>algorithm-code</module>
+        <module>spring-01-ioc</module>
     </modules>
 
     <properties>
@@ -18,12 +19,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.32</version>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.34</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
